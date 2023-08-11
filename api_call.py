@@ -38,6 +38,6 @@ if r.status_code == 200:
         with open('file.txt', 'a') as f:
             f.write(sys1['path'])
             f.write("\n")
-            print(sys1['path'])
+            # print(sys1['path'])
 else:
     print(f"Error: {r.status_code}")
