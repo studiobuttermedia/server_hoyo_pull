@@ -19,7 +19,7 @@ else:
     file = open("file.txt", "a")
 
 
-print("Requesting...")
+print("Getting Requested content")
 
 url = 'https://sdk-os-static.mihoyo.com/hk4e_global/mdk/launcher/api/resource'
 headers = {'Accept': 'application/json'}
