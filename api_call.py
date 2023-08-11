@@ -1,18 +1,20 @@
 import requests
 import json
 # import pprint
-# import os
+import os
 
 # cmd = 'wget'
-
-file = open("file.txt", "r")
-content = file.read()
-file.close()
-if content:
-    file = open("file.txt", "w")
-    file.write("")
+if os.path.isfile("file.txt") == True:
+    file = open("file.txt", "r")
+    content = file.read()
+    file.close()
+    if content:
+        file = open("file.txt", "w")
+        file.write("")
+    else:
+        print("No data found in Text file")
 else:
-    print("Creating file.")
+    file = open("file.txt", "a")
 
 
 print("Requesting...")
