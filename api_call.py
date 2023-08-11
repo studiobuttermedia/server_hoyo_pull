@@ -14,6 +14,7 @@ if os.path.isfile("file.txt") == True:
     else:
         print("No data found in Text file")
 else:
+    print("Creating file")
     file = open("file.txt", "a")
 
 
