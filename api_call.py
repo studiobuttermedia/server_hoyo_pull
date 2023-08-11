@@ -5,6 +5,20 @@ import json
 
 # cmd = 'wget'
 
+# open the file named "example.txt"
+file = open("file.txt", "r")
+# read the file as a string
+content = file.read()
+# close the file
+file.close()
+# check if the content is empty
+if content:
+    file = open("file.txt", "w")
+    file.write("")
+else:
+    print("Creating file.")
+
+
 print("Requesting...")
 
 url = 'https://sdk-os-static.mihoyo.com/hk4e_global/mdk/launcher/api/resource'
