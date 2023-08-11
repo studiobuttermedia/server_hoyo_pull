@@ -1,7 +1,7 @@
 import requests
 import json
-# import pprint
 import os
+# import pprint
 
 # cmd = 'wget'
 if os.path.isfile("file.txt") == True:
