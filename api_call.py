@@ -9,6 +9,7 @@ if os.path.isfile("file.txt") == True:
     content = file.read()
     file.close()
     if content:
+        print("Cleaning existing data")
         file = open("file.txt", "w")
         file.write("")
     else:
