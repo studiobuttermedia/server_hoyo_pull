@@ -22,8 +22,8 @@ if r.status_code == 200:
     content = json.loads(r.text)
     for sys1 in content['data']['game']['latest']['segments']:
         with open('file.txt', 'a') as f:
-            # f.write(sys1['path'])
-            json.dump(sys1['path'], f, indent=4)
+            f.write(sys1['path'])
+            f.write("\n")
             print(sys1['path'])
 else:
     print(f"Error: {r.status_code}")
