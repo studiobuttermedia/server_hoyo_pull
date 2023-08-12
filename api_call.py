@@ -36,7 +36,7 @@ if r.status_code == 200:
     content = json.loads(r.text)
     for sys1 in content['data']['game']['latest']['segments']:
         with open('file.txt', 'a') as f:
-            f.write("File: ")
+            f.write("File (Number here): ")
             f.write(sys1['path'])
             f.write("\n")
             # print(sys1['path'])
