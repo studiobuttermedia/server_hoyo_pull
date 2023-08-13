@@ -1,9 +1,7 @@
 import requests
 import json
 import os
-# import pprint
 
-# cmd = 'wget'
 if os.path.isfile("file.txt") == True:
     file = open("file.txt", "r")
     content = file.read()
@@ -37,10 +35,9 @@ r = requests.get(url, params, headers=headers)
 if r.status_code == 200:
     content = json.loads(r.text)
     for sys1 in content['data']['game']['latest']['segments']:
-        with open('file.txt', 'a') as f:
-                f.write(f"File #{sys1['file_id']}")
-                f.write(sys1['path'])
-                f.write("\n")
-            # print(sys1['path'])
+        # Get URL Links from JSON dict ['data']['game']['latest']['segments']['path'] and write to text file with numbers on each line
+        file = open("file.txt", "a")
+        file.write(sys1['path'] + "\n")
+        file.close()
 else:
     print(f"Error: {r.status_code}")
