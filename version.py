@@ -39,7 +39,7 @@ else:
     print('Updates needed')
     print(f'Latest version: {latest_version}')
     print(f'Current version: {current_version}')
-    # Do something here to update the game
+    exec(open('api_call.py').read())
     # Save the latest version to the current version text file
     with open('current_version.txt', 'w') as f:
         f.write(latest_version)
