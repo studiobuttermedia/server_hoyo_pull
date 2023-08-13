@@ -167,3 +167,11 @@ file.txt
 test.txt
 README_Server.txt
 Test_Book.ipynb
+
+# Ignore all .ipynb_checkpoints
+.ipynb_checkpoints/*
+```
+
+# Ignore Version Text files
+version.txt
+current_version.txt
