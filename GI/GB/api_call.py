@@ -2,19 +2,19 @@ import requests
 import json
 import os
 
-if os.path.isfile("file.txt") == True:
-    file = open("file.txt", "r")
+if os.path.isfile("GI/GB/data.txt") == True:
+    file = open("GI/GB/data.txt", "r")
     content = file.read()
     file.close()
     if content:
         print("Cleaning existing data")
-        file = open("file.txt", "w")
+        file = open("GI/GB/data.txt", "w")
         file.write("")
     else:
         print("No data found in Text file")
 else:
     print("Creating file")
-    file = open("file.txt", "a")
+    file = open("GI/GB/data.txt", "a")
 
 
 print("Getting Requested content")
@@ -36,7 +36,7 @@ if r.status_code == 200:
     content = json.loads(r.text)
     for sys1 in content['data']['game']['latest']['segments']:
         # Get URL Links from JSON dict ['data']['game']['latest']['segments']['path'] and write to text file with numbers on each line
-        file = open("file.txt", "a")
+        file = open("GI/GB/data.txt", "a")
         file.write(sys1['path'] + "\n")
         file.close()
 else:
