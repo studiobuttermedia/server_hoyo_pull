@@ -167,10 +167,6 @@ Test_Book.ipynb
 .ipynb_checkpoints/*
 ```
 
-# Ignore Version Text files
-version.txt
-current_version.txt
-
 #Ignore Every JSON and Text Files
 *.json
 *.txt
