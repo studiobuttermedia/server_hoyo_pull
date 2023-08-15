@@ -175,3 +175,6 @@ Test_Book.ipynb
 # Ignore Version Text files
 version.txt
 current_version.txt
+
+#Ignore Every JSON Files
+*.json
