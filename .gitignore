@@ -161,10 +161,6 @@ cython_debug/
 
 # Custom Ignores
 .vscode
-APIs.txt
-file.txt
-test.txt
-README_Server.txt
 Test_Book.ipynb
 
 # Ignore all .ipynb_checkpoints
@@ -175,5 +171,6 @@ Test_Book.ipynb
 version.txt
 current_version.txt
 
-#Ignore Every JSON Files
+#Ignore Every JSON and Text Files
 *.json
+*.txt
