@@ -161,9 +161,9 @@ cython_debug/
 
 # Custom Ignores
 .vscode
-Test_Book.ipynb
 
-# Ignore all .ipynb_checkpoints
+# Ignore Jupyter Notebook and Notebook Checkpoints
+Test_Book.ipynb
 .ipynb_checkpoints/*
 ```
 
