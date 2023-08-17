@@ -170,3 +170,4 @@ Test_Book.ipynb
 #Ignore Every JSON and Text Files
 *.json
 *.txt
+test.py
