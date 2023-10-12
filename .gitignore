@@ -167,10 +167,11 @@ Test_Book.ipynb
 .ipynb_checkpoints/*
 ```
 
-#Ignore Every JSON and Text Files
+#Ignore Every JSON, Python and Text Files
 *.json
 *.txt
 test.py
+AI_Test_code.py
 
 #Ignore some Folders
 __pycache__/
