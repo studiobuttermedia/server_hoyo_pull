@@ -171,3 +171,6 @@ Test_Book.ipynb
 *.json
 *.txt
 test.py
+
+#Ignore some Folders
+__pycache__
