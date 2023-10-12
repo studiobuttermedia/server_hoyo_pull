@@ -173,4 +173,4 @@ Test_Book.ipynb
 test.py
 
 #Ignore some Folders
-__pycache__
+__pycache__/
