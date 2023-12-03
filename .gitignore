@@ -172,6 +172,7 @@ Test_Book.ipynb
 *.txt
 test.py
 AI_Test_code.py
+AI_Test_code_2.py
 
 #Ignore some Folders
 __pycache__/
